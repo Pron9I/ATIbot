@@ -238,8 +238,8 @@ bot
             Markup.keyboard(['Закончить поиск']).oneTime().resize().extra()
           );
         }
-      }, 45000);
-    }, 60000);
+      }, 20000);
+    }, 30000);
   });
 
 bot.on('sticker', (ctx) => ctx.reply('👍'));
