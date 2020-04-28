@@ -20,9 +20,6 @@
     "eslint-plugin-react-hooks": "^2.5.0",
     "prettier": "^2.0.5"
   },
-  "engines": {
-    "node": "8.11.4"
-  },
   "dependencies": {
     "dotenv": "^8.2.0",
     "nightmare": "^3.0.2",
