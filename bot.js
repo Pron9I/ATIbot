@@ -22,7 +22,13 @@ const bot = new Telegraf(
 function ATIparse(cityLoad, radLoad) {
   const Nightmare = require('nightmare');
   // show: true,
-  const nightmare = Nightmare({ typeInterval: 500 });
+  const nightmare = Nightmare({
+    typeInterval: 500,
+    certificateSubjectName: 'tester',
+    switches: {
+      'ignore-certificate-errors': true
+    }
+  });
   let finish = {};
   nightmare
     .goto('https://loads.ati.su/')
