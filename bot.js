@@ -24,10 +24,6 @@ function ATIparse(cityLoad, radLoad) {
   // show: true,
   const nightmare = Nightmare({
     typeInterval: 500,
-    // certificateSubjectName: 'tester',
-    // switches: {
-    //   'ignore-certificate-errors': true
-    // }
   });
   let finish = {};
   nightmare
@@ -251,12 +247,3 @@ bot
 bot.on('sticker', (ctx) => ctx.reply('👍'));
 
 bot.launch();
-//  node bot.js
-// worker: npm start --auto-servernum --server-args="-screen 0 1024x768x24"
-// heroku stack:set cedar-14
-// heroku create --region eu atibot1
-// heroku addons:create heroku-redis:hobby-dev -a atibot1
-// git push heroku master
-// heroku ps:scale web=0
-// heroku ps:scale bot=1 # запускаем бота
-// heroku logs --tail
