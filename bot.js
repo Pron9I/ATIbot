@@ -24,10 +24,10 @@ function ATIparse(cityLoad, radLoad) {
   // show: true,
   const nightmare = Nightmare({
     typeInterval: 500,
-    certificateSubjectName: 'tester',
-    switches: {
-      'ignore-certificate-errors': true
-    }
+    // certificateSubjectName: 'tester',
+    // switches: {
+    //   'ignore-certificate-errors': true
+    // }
   });
   let finish = {};
   nightmare
