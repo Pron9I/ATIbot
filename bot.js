@@ -1,11 +1,11 @@
-// const SocksAgent = require('C:/Users/GOD/ATIBOT/node_modules/socks5-https-client/lib/Agent.js');
+const SocksAgent = require('C:/Users/GOD/ATIBOT/node_modules/socks5-https-client/lib/Agent.js');
 
-// const socksAgent = new SocksAgent({
-//   socksHost: '85.10.235.14',
-//   socksPort: 1080,
-//   //   // socksUsername: ,
-//   //   // socksPassword: ,
-// });
+const socksAgent = new SocksAgent({
+  socksHost: '85.10.235.14',
+  socksPort: 1080,
+  //   // socksUsername: ,
+  //   // socksPassword: ,
+});
 require('dotenv').config();
 
 const Telegraf = require('telegraf');
@@ -16,7 +16,7 @@ const Markup = require('telegraf/markup');
 
 const bot = new Telegraf(
   process.env.BOT_TOKEN
-  // , { telegram: { agent: socksAgent } }
+  , { telegram: { agent: socksAgent } }
 );
 
 function ATIparse(cityLoad, radLoad) {
