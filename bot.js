@@ -245,7 +245,7 @@ bot
 bot.on('sticker', (ctx) => ctx.reply('👍'));
 
 bot.launch();
-
+//  node bot.js
 // worker: npm start --auto-servernum --server-args="-screen 0 1024x768x24"
 // heroku stack:set cedar-14
 // heroku create --region eu atibot1

@@ -1,4 +1,4 @@
-web: node bot.js
+web: xvfb-run node bot.js
 heroku login vladpron2016@gmail.com WOwnib846_
 heroku buildpacks:add --index 1 https://github.com/heroku/heroku-buildpack-apt
 heroku buildpacks:add --index 2 https://github.com/captain401/heroku-buildpack-xvfb.git
