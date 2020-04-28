@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node bot.js"
   },
   "author": "",
@@ -19,6 +18,9 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.0",
     "prettier": "^2.0.5"
+  },
+  "engines": {
+    "node": "12.8.0"
   },
   "dependencies": {
     "dotenv": "^8.2.0",

@@ -1,4 +1,4 @@
-worker: npm start --auto-servernum --server-args="-screen 0 1024x768x24"
+web: node bot.js
 heroku login vladpron2016@gmail.com WOwnib846_
 heroku stack:set cedar-14
 heroku buildpacks:add --index 1 https://github.com/heroku/heroku-buildpack-apt
